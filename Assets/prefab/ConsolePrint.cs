@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test : MonoBehaviour
+public class ConsolePrint : MonoBehaviour
 {
+    int i = 0;
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Test");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        i = i + 1;
+        Debug.Log(gameObject.name + ":" + i);
     }
 }
